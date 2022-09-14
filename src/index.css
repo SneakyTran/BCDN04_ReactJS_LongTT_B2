@@ -1,13 +1,94 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image: url("../public/glassesImage/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+header {
+    background-color: black;
+    opacity: 0.7;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.glass__model img {
+    width: 250px;
+}
+
+.d-flex {
+    justify-content: space-around;
+}
+
+.try__glass {
+    position: relative;
+}
+.glass--wear {
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    width: 60%;
+    transform: translateX(-50%);
+}
+
+.glass__detail {
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    background-color: black;
+    opacity: 0.5;
+
+    color: white;
+    overflow: hidden;
+    padding: 5px 10px;
+}
+
+.glass__detail h2 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.glass__detail span {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 1px solid red;
+    border-radius: 1px;
+    background-color: red;
+    padding: 0 3px;
+    margin-top: 2px;
+}
+.glass__list {
+    padding: 30px 20px;
+    background-color: white;
+}
+
+.glass__list button{
+    border: none;
+    padding: 0;
+}
+
+.glass__list img {
+    width: 120px;
 }
